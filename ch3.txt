@@ -1,1 +1,174 @@
 It is chapter 3 here
+
+
+
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~
+$ pwd
+/c/Users/lenovo
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~
+$ cd Desktop/
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop
+$ cd 'Web Dev'/
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev
+$ mkdir Story
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev
+$ touch ch1.txt
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev
+$ open ch1.text
+bash: open: command not found
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev
+$ git init
+Initialized empty Git repository in C:/Users/lenovo/Desktop/Web Dev/.git/
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev (master)
+$ ls -a
+ ./                                   Signup/
+ ../                                 'Simon Game Challenge Completed'/
+ .git/                               'Simon Game Challenge Starting Files'/
+ Boostrap-installations/             'Simon Game Challenge Step 2 Answer'/
+ CSS-MYSITE/                          Story/
+ Calc/                                StubCode.html
+ DOM/                                'Web Dev Syllabus.pdf'
+'Dicee Challenge - Starting Files'/   __MACOSX/
+'Drum Kit Starting Files'/            i-express/
+ HTML/                                intro-node/
+ HTML-PersonalSite/                   jquery/
+ Portfolio/                          'weather projex'/
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev (master)
+$ cd Story/
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git init
+Initialized empty Git repository in C:/Users/lenovo/Desktop/Web Dev/Story/.git/
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ ls -a
+./  ../  .git/  ch1.txt
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ch1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git add ch1.txt
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ch1.txt
+
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git commit -m "Complete ch 1"
+[master (root-commit) 16e9ede] Complete ch 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ch1.txt
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git log
+commit 16e9edea844f2d75c1c274f73caf43028368acfb (HEAD -> master)
+Author: unknown <sid98264.gmail.com>
+Date:   Tue Mar 16 18:16:14 2021 +0530
+
+    Complete ch 1
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ touch ch2.txt
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ touch ch3.txt
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ch2.txt
+        ch3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git add .
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ch2.txt
+        new file:   ch3.txt
+
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git commit -m "Complete ch 2 and 3"
+[master e633c8b] Complete ch 2 and 3
+ 2 files changed, 2 insertions(+)
+ create mode 100644 ch2.txt
+ create mode 100644 ch3.txt
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git log
+commit e633c8b2691e934292256259053a3ad0c1a1e931 (HEAD -> master)
+Author: unknown <sid98264.gmail.com>
+Date:   Tue Mar 16 18:24:02 2021 +0530
+
+    Complete ch 2 and 3
+
+commit 16e9edea844f2d75c1c274f73caf43028368acfb
+Author: unknown <sid98264.gmail.com>
+Date:   Tue Mar 16 18:16:14 2021 +0530
+
+    Complete ch 1
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git log
+commit e633c8b2691e934292256259053a3ad0c1a1e931 (HEAD -> master)
+Author: unknown <sid98264.gmail.com>
+Date:   Tue Mar 16 18:24:02 2021 +0530
+
+    Complete ch 2 and 3
+
+commit 16e9edea844f2d75c1c274f73caf43028368acfb
+Author: unknown <sid98264.gmail.com>
+Date:   Tue Mar 16 18:16:14 2021 +0530
+
+    Complete ch 1
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git remote add origin https://github.com/siddharth0405/Story.git
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 544 bytes | 272.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/siddharth0405/Story.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+lenovo@LAPTOP-4P72HEQV MINGW64 ~/Desktop/Web Dev/Story (master)
